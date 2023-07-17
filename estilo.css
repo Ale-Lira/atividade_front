@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    display: grid;
+}
+    /* Logo */
+
+    .logo {
+        text-align: center;
+        background-color: yellow;
+    }
+    img{
+        width: 150px;
+        height: 100px;
+    }
+
+    /* Nav */
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        background-color: orange;
+    }
+    
+    nav ul li a {
+        
+        color: #2843CC;
+        text-decoration: none;
+        padding: 0.2em;
+        display: inline-block;
+    }
+    
+    nav ul li a:hover {
+        color: #14226b;
+    }
+    
+    nav ul li {
+        display: inline-block;
+    }
+    nav div#dropdown_menu {
+        display: none;
+        position: absolute;
+        background-color: #EBFF33;
+        border: 1px solid rgb(48, 19, 163);
+        box-shadow: 0px 2px 4px black;
+    }
+    
+    nav div#dropdown_menu a {
+        display: block;
+    }
+    
+    nav ul li#dropdown:hover div#dropdown_menu {
+        display: block;
+    }
+    
+    nav ul li input {
+        width: 15em;
+        margin-left: 10em;
+        border-radius: 5px;
+    }
+
+    /* Principal */
+
+    .adicionar{
+        background-color: red;
+        text-align: center;
+        padding: 2em;
+    }
+    .adicionar input{
+        width: 80%;
+        border-radius: 5px;
+    }
+    .lin {
+        background-color: aqua;
+        margin-top: 0;
+    }
+    .lin li{
+        text-decoration: none;
+        list-style: none;
+    }
+    .refle{
+        text-align: center;
+    }
+    main{
+        padding: 0;
+    }
+
+        /* Footer */
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(7, 7, 7);
+        color: white;
+        text-align: center;
+      }
+      .video{
+        display: none;
+      }
+      .anuncios{
+        display: none;
+      }
+
+@media screen and (min-width:480px) {
+    header{
+        display: grid;
+        grid-template-columns:  35% 65%;
+    }
+
+    .video{
+        display: block;
+      }
+      .anuncios{
+        display: block;
+      }
+}
